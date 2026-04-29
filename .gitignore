@@ -1,0 +1,18 @@
+#Environments
+venv/
+env/
+.env
+
+#Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+#ML
+*.pt
+*.pth
+*.weights
+
+#Generated files
+.DS_Store
+Thumbs.db
