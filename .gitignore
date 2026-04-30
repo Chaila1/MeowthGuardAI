@@ -2,6 +2,7 @@
 venv/
 env/
 .env
+linux_venv/
 
 #Cache
 __pycache__/
