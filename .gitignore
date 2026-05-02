@@ -17,3 +17,6 @@ __pycache__/
 #Generated files
 .DS_Store
 Thumbs.db
+
+Training Data/dataset/
+*.pth
