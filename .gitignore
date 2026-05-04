@@ -21,3 +21,6 @@ Thumbs.db
 Training Data/dataset/
 tmp_*.pth
 last_run.pth
+
+node_modules/
+Training Data/node_modules/
