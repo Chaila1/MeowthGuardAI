@@ -44,6 +44,15 @@ def scanImage():
             fakeCon = probs[0].item() * 100
             realCon = probs[1].item() * 100
 
+            if realCon < 50 and fakeCon < 70:
+                return jsonify({
+                    "status": "success",
+                    "cardName": "Unknown Entry",
+                    "prediction": "invalid",
+                    "confidenceScore" : round(max(realCon, fakeCon), 2),
+                    "reasoning": "This card couldn't be identified"
+                })
+
             verdict = "fake" if fakeCon > realCon else "real"
             final_score = realCon if verdict == "real" else fakeCon
 
